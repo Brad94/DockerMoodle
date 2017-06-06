@@ -9,8 +9,8 @@ RUN git clone git://git.moodle.org/moodle.git
 WORKDIR /opt/moodle
 RUN git init
 RUN git branch -a
-RUN git branch --track MOODLE_32_STABLE origin/MOODLE_32_STABLE
-RUN git checkout MOODLE_32_STABLE
+RUN git branch --track MOODLE_33_STABLE origin/MOODLE_33_STABLE
+RUN git checkout MOODLE_33_STABLE
 RUN cp -R /opt/moodle /var/www/html/
 RUN mkdir /var/moodledata
 RUN chown -R www-data /var/moodledata
